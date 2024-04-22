@@ -1,0 +1,116 @@
+{
+    "Lundi": [
+        {
+            "8h00-10h00": "Pharmacologie"
+        },
+        {
+            "10h15-12h15": "Anesthésie générale"
+        },
+        {
+            "13h00-15h00": "Reconstitutions corono-radiculaires"
+        },
+        {
+            "15h15-17h15": "Thérapeutiques parodontales"
+        },
+        {
+            "18h00-20h00": "Anesthésie locoregionale"
+        },
+        {
+            "20h15-22h15": "Odontologie restauratrice"
+        }
+    ],
+    "Mardi": [
+        {
+            "8h00-10h00": "Chirurgie orale simple"
+        },
+        {
+            "10h15-12h15": "Sémiologie médicale"
+        },
+        {
+            "13h00-15h00": "Imagerie en odontologie"
+        },
+        {
+            "15h15-17h15": "Endodontie pédiatrique"
+        },
+        {
+            "18h00-20h00": "Prévention et interception des malocclusions"
+        },
+        {
+            "20h15-22h15": "Reconstitutions corono-radiculaires"
+        }
+    ],
+    "Mercredi": [
+        {
+            "8h00-10h00": "Thérapeutiques parodontales"
+        },
+        {
+            "10h15-12h15": "Anesthésie générale"
+        },
+        {
+            "13h00-15h00": "Pharmacologie"
+        },
+        {
+            "15h15-17h15": "Odontologie restauratrice"
+        },
+        {
+            "18h00-20h00": "Chirurgie orale simple"
+        },
+        {
+            "20h15-22h15": "Imagerie en odontologie"
+        }
+    ],
+    "Jeudi": [
+        {
+            "8h00-10h00": "Anesthésie locoregionale"
+        },
+        {
+            "10h15-12h15": "Sémiologie médicale"
+        },
+        {
+            "13h00-15h00": "Endodontie pédiatrique"
+        },
+        {
+            "15h15-17h15": "Prévention et interception des malocclusions"
+        },
+        {
+            "18h00-20h00": "Reconstitutions corono-radiculaires"
+        },
+        {
+            "20h15-22h15": "Thérapeutiques parodontales"
+        }
+    ],
+    "Vendredi": [
+        {
+            "8h00-10h00": "Odontologie restauratrice"
+        },
+        {
+            "10h15-12h15": "Pharmacologie"
+        },
+        {
+            "13h00-15h00": "Anesthésie générale"
+        },
+        {
+            "15h15-17h15": "Chirurgie orale simple"
+        },
+        {
+            "18h00-20h00": "Imagerie en odontologie"
+        },
+        {
+            "20h15-22h15": "Anesthésie locoregionale"
+        }
+    ],
+    "Samedi": [
+        {
+            "8h00-10h00": "Sémiologie médicale"
+        },
+        {
+            "10h15-12h15": "Endodontie pédiatrique"
+        },
+        {
+            "13h00-15h00": "Prévention et interception des malocclusions"
+        },
+        {
+            "15h15-17h15": "Révisions / Travail personnel"
+        }
+    ]
+}

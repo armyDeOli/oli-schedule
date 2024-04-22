@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+    </style>
+    <title>Emploi du Temps</title>
+</head>
+<body>
+
+<table id="emploiDuTemps">
+    <thead>
+        <tr>
+            <th>Jour</th>
+            <th>Heure</th>
+            <th>Matière</th>
+            <th>Durée</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- The table will be generated dynamically using JavaScript -->
+    </tbody>
+</table>
+
+<script>
+// Function to convert JSON data to HTML table rows and insert them into an existing table
+function jsonToHtmlTable(jsonData, tableId) {
+    // Get the table element by its id
+    let table = document.getElementById(tableId);
+    // Get the first tbody element within the table
+    let tbody = table.getElementsByTagName('tbody')[0];
+
+    // Iterate over each day in the JSON data
+    for (let day in jsonData) {
+        // Get the courses for the current day
+        let dayCourses = jsonData[day];
+        // Insert a new row into the tbody
+        let row = tbody.insertRow();
+        // Insert a new cell into the row
+        let cell = row.insertCell();
+        // Set the rowspan attribute of the cell to the number of courses in the current day
+        cell.setAttribute('rowspan', dayCourses.length);
+        // Set the text content of the cell to the current day
+        cell.textContent = day;
+
+        // Iterate over each course in the current day
+        for (let i = 0; i < dayCourses.length; i++) {
+            // Get the current course
+            let course = dayCourses[i];
+            // Iterate over each time slot in the current course
+            for (let time in course) {
+                // Get the subject and hours for the current time slot
+                let subject = course[time];
+                let hours = subject.split('(')[1];
+
+                let result = subject.match(/\((.*?)\)/)[1];
+                // If this is not the first course of the day, insert a new row into the tbody
+                if (i !== 0) {
+                    row = tbody.insertRow();
+                }
+                // Insert a new cell into the row and set its text content to the time slot
+                cell = row.insertCell();
+                cell.textContent = time;
+                // Insert a new cell into the row and set its text content to the subject
+                cell = row.insertCell();
+                cell.textContent = subject;
+                // Insert a new cell into the row and set its text content to the hours
+                cell = row.insertCell();
+                cell.textContent = result;
+            }
+        }
+    }
+}
+
+// JSON data representing the schedule
+let jsonData = {
+    "Lundi": [
+        {
+            "10h00-12h00": "Pharmacologie (2 heures)"
+        },
+        {
+            "13h00-15h00": "Anesthésie générale (2 heures)"
+        },
+        {
+            "15h15-17h15": "Reconstitutions corono-radiculaires (2 heures)"
+        },
+        {
+            "18h00-20h00": "Thérapeutiques parodontales (2 heures)"
+        },
+        {
+            "20h15-22h15": "Anesthésie locoregionale (2 heures)"
+        }
+    ],
+    "Mardi": [
+        {
+            "8h00-10h00": "Chirurgie orale simple (2 heures)"
+        },
+        {
+            "10h15-12h15": "Sémiologie médicale (2 heures)"
+        },
+        {
+            "13h00-15h00": "Imagerie en odontologie (2 heures)"
+        },
+        {
+            "15h15-17h15": "Endodontie pédiatrique (2 heures)"
+        },
+        {
+            "18h00-20h00": "Prévention et interception des malocclusions (2 heures)"
+        },
+        {
+            "20h15-22h15": "Reconstitutions corono-radiculaires (2 heures)"
+        }
+    ],
+    "Mercredi": [
+        {
+            "8h00-10h00": "Thérapeutiques parodontales (2 heures)"
+        },
+        {
+            "10h15-12h15": "Anesthésie générale (2 heures)"
+        },
+        {
+            "13h00-15h00": "Pharmacologie (2 heures)"
+        },
+        {
+            "15h15-17h15": "Odontologie restauratrice (2 heures)"
+        },
+        {
+            "18h00-20h00": "Chirurgie orale simple (2 heures)"
+        },
+        {
+            "20h15-22h15": "Imagerie en odontologie (2 heures)"
+        }
+    ],
+    "Jeudi": [
+        {
+            "8h00-10h00": "Anesthésie locoregionale (2 heures)"
+        },
+        {
+            "10h15-12h15": "Sémiologie médicale (2 heures)"
+        },
+        {
+            "13h00-15h00": "Endodontie pédiatrique (2 heures)"
+        },
+        {
+            "15h15-17h15": "Prévention et interception des malocclusions (2 heures)"
+        },
+        {
+            "18h00-20h00": "Reconstitutions corono-radiculaires (2 heures)"
+        },
+        {
+            "20h15-22h15": "Thérapeutiques parodontales (2 heures)"
+        }
+    ],
+    "Vendredi": [
+        {
+            "8h00-10h00": "Odontologie restauratrice (2 heures)"
+        },
+        {
+            "10h15-12h15": "Pharmacologie (2 heures)"
+        },
+        {
+            "13h00-15h00": "Anesthésie générale (2 heures)"
+        },
+        {
+            "15h15-17h15": "Chirurgie orale simple (2 heures)"
+        },
+        {
+            "18h00-20h00": "Imagerie en odontologie (2 heures)"
+        },
+        {
+            "20h15-22h15": "Anesthésie locoregionale (2 heures)"
+        }
+    ],
+    "Samedi": [
+        {
+            "8h00-10h00": "Sémiologie médicale (2 heures)"
+        },
+        {
+            "10h15-12h15": "Endodontie pédiatrique (2 heures)"
+        },
+        {
+            "13h00-15h00": "Prévention et interception des malocclusions (2 heures)"
+        },
+        {
+            "15h15-17h15": "Révisions / Travail personnel (2 heures)"
+        }
+    ]
+};
+
+// Call the function to convert the JSON data to HTML table rows and insert them into the table with the id "emploiDuTemps"
+jsonToHtmlTable(jsonData, 'emploiDuTemps');
+</script>
+
+</body>
+</html>
