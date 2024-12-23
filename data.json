@@ -1,116 +1,67 @@
 {
     "Lundi": [
         {
-            "8h00-10h00": "Pharmacologie"
+            "19h00-21h00": "Endodontie (révisions de concepts et théories)"
         },
         {
-            "10h15-12h15": "Anesthésie générale"
-        },
-        {
-            "13h00-15h00": "Reconstitutions corono-radiculaires"
-        },
-        {
-            "15h15-17h15": "Thérapeutiques parodontales"
-        },
-        {
-            "18h00-20h00": "Anesthésie locoregionale"
-        },
-        {
-            "20h15-22h15": "Odontologie restauratrice"
+            "21h00-23h00": "Chirurgie parodontale (notions théoriques et techniques)"
         }
     ],
     "Mardi": [
         {
-            "8h00-10h00": "Chirurgie orale simple"
+            "19h00-21h00": "Pédiatrie dentaire (notions de base et pathologies fréquentes)"
         },
         {
-            "10h15-12h15": "Sémiologie médicale"
-        },
-        {
-            "13h00-15h00": "Imagerie en odontologie"
-        },
-        {
-            "15h15-17h15": "Endodontie pédiatrique"
-        },
-        {
-            "18h00-20h00": "Prévention et interception des malocclusions"
-        },
-        {
-            "20h15-22h15": "Reconstitutions corono-radiculaires"
+            "21h00-23h00": "PAPm (révision des principes généraux et techniques de gestion de la douleur)"
         }
     ],
     "Mercredi": [
         {
-            "8h00-10h00": "Thérapeutiques parodontales"
+            "19h00-21h00": "Endodontie (révisions pratiques, cas cliniques)"
         },
         {
-            "10h15-12h15": "Anesthésie générale"
-        },
-        {
-            "13h00-15h00": "Pharmacologie"
-        },
-        {
-            "15h15-17h15": "Odontologie restauratrice"
-        },
-        {
-            "18h00-20h00": "Chirurgie orale simple"
-        },
-        {
-            "20h15-22h15": "Imagerie en odontologie"
+            "21h00-23h00": "Chirurgie parodontale (révisions pratiques et gestion des cas cliniques)"
         }
     ],
     "Jeudi": [
         {
-            "8h00-10h00": "Anesthésie locoregionale"
+            "19h00-21h00": "Pédiatrie dentaire (approfondissement sur les soins spécifiques aux enfants)"
         },
         {
-            "10h15-12h15": "Sémiologie médicale"
-        },
-        {
-            "13h00-15h00": "Endodontie pédiatrique"
-        },
-        {
-            "15h15-17h15": "Prévention et interception des malocclusions"
-        },
-        {
-            "18h00-20h00": "Reconstitutions corono-radiculaires"
-        },
-        {
-            "20h15-22h15": "Thérapeutiques parodontales"
+            "21h00-23h00": "PAPm (gestion des complications et études de cas)"
         }
     ],
     "Vendredi": [
         {
-            "8h00-10h00": "Odontologie restauratrice"
+            "19h00-21h00": "Endodontie (révisions sur les instruments et traitements endodontiques spécifiques)"
         },
         {
-            "10h15-12h15": "Pharmacologie"
-        },
-        {
-            "13h00-15h00": "Anesthésie générale"
-        },
-        {
-            "15h15-17h15": "Chirurgie orale simple"
-        },
-        {
-            "18h00-20h00": "Imagerie en odontologie"
-        },
-        {
-            "20h15-22h15": "Anesthésie locoregionale"
+            "21h00-23h00": "Chirurgie parodontale (approfondissement des techniques chirurgicales)"
         }
     ],
     "Samedi": [
         {
-            "8h00-10h00": "Sémiologie médicale"
+            "8h00-10h00": "Dysmorphoses et malocclusions (révisions théoriques, étude des cas types)"
         },
         {
-            "10h15-12h15": "Endodontie pédiatrique"
+            "10h15-12h15": "Microdentisterie (révisions techniques et approches de traitement)"
         },
         {
-            "13h00-15h00": "Prévention et interception des malocclusions"
+            "13h00-15h00": "Prothèse conjointe à recouvrement partiel (révisions théoriques et pratiques)"
         },
         {
-            "15h15-17h15": "Révisions / Travail personnel"
+            "15h15-17h15": "Révisions générales ou travail personnel sur les matières à faible coefficient"
+        }
+    ],
+    "Dimanche": [
+        {
+            "12h00-14h00": "Endodontie (révisions sur les cas complexes)"
+        },
+        {
+            "14h15-16h15": "Pédiatrie dentaire (révisions pratiques et gestion des cas cliniques chez les enfants)"
+        },
+        {
+            "16h30-18h30": "PAPm (révision des derniers points théoriques ou d'approfondissement)"
         }
     ]
 }
